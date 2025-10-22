@@ -77,9 +77,11 @@ Se imponen validaciones mínimas a las entradas de texto:
 
 
  ## Equipo de desarrollo:
- - Soledad Buri
- - Victor Fernando Roa
- - Ana Panamito
- - Martina Maldonado 
+ - Buri Camacho Maria Soledad
+ - Martina Maldonado Machuca Martina Alejandra
+ - Panamito Flores Ana Cristina
+ - Roa Carrion Victor Fernando 
+
+
     
 
