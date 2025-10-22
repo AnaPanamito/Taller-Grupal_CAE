@@ -8,7 +8,9 @@ El sistema CAE tiene como propósito garantizar la equidad en el servicio, proce
 
 Uno de los requerimientos más importantes fue agregar el mecanismo de Deshacer/Rehacer, donde cada operación significativa (como agregar o eliminar una nota) se encapsula en un objeto Acción.
 La gestión del historial se apoya en dos estructuras de datos de tipo Pila (PilaAcciones), gestionadas en la clase TicketServicio:
+
 •	Pila de Deshacer (undo): Almacena las Acciones ejecutadas. Cuando se llama a deshacer (), la última acción se revierte y se mueve a la pila redo.
+
 •	Pila de Rehacer (redo): Contiene las acciones que han sido deshechas y están listas para ser restauradas. Si se realiza una nueva acción, esta pila se vacía para mantener la coherencia del historial.
 
 ## Estructuras de Datos
