@@ -15,7 +15,9 @@ La gestión del historial se apoya en dos estructuras de datos de tipo Pila (Pil
 
 ## Estructuras de Datos
 El diseño del sistema prioriza el rendimiento y el flujo de trabajo lógico mediante el uso estratégico de estructuras de datos enlazadas:
+
 •	Cola de Tickets (ColaTickets): Implementada para asegurar la política FIFO. Las nuevas solicitudes se encolan al final y se atienden desde el frente, garantizando que el ticket con más tiempo de espera sea el siguiente en procesarse.
+
 •	Lista de Notas (ListaNotas): Se utiliza una Lista Enlazada Simple dentro de cada Ticket para almacenar observaciones. Las nuevas notas se insertan eficientemente al inicio de la lista, permitiendo un registro rápido de la actividad reciente.
 
 # Catálogo de Estados 
