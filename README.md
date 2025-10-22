@@ -27,7 +27,9 @@ Cada solicitud (Ticket) transiciona a través de distintos estados que reflejan 
 •	COMPLETADOEl servicio ha concluido, y el ticket pasa a un historial inmutable.
 ## Manejo de errores 
 Tenemos las Validaciones rigurosas para asegurar la integridad de los datos y la lógica operativa.
+
 •	Si la ColaTickets está vacía al intentar atenderSiguiente(), el sistema informa que "no hay tickets pendientes".
+
 •	Validación Se asegura que el nombre del estudiante sea válido (no vacío y con longitud mínima) antes de crear un ticket. De igual forma, las opciones de menú y el texto de las notas deben ser válidos.
 
 # Casos bordes 
