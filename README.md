@@ -3,6 +3,7 @@
 # Sistema CAE 
 
 El sistema CAE tiene como propósito garantizar la equidad en el servicio, procesando cada solicitud en el orden riguroso de su llegada, y proveer una plataforma de trabajo auditable, con plena capacidad de marcha atrás y adelante en las modificaciones del expediente.
+
 # Decisiones de diseño 
 
 ## Mecanismo de Deshacer/Rehacer (Undo/Redo)
