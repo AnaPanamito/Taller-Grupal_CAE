@@ -4,7 +4,6 @@
 
 El sistema CAE tiene como propósito garantizar la equidad en el servicio, procesando cada solicitud en el orden riguroso de su llegada, y proveer una plataforma de trabajo auditable, con plena capacidad de marcha atrás y adelante en las modificaciones del expediente.
 # Decisiones de diseño 
-
 ## Mecanismo de Deshacer/Rehacer (Undo/Redo)
 
 Uno de los requerimientos más importantes fue agregar el mecanismo de Deshacer/Rehacer, donde cada operación significativa (como agregar o eliminar una nota) se encapsula en un objeto Acción.
@@ -13,20 +12,16 @@ La gestión del historial se apoya en dos estructuras de datos de tipo Pila (Pil
 •	Pila de Rehacer (redo): Contiene las acciones que han sido deshechas y están listas para ser restauradas. Si se realiza una nueva acción, esta pila se vacía para mantener la coherencia del historial.
 
 ## Estructuras de Datos
-
 El diseño del sistema prioriza el rendimiento y el flujo de trabajo lógico mediante el uso estratégico de estructuras de datos enlazadas:
 •	Cola de Tickets (ColaTickets): Implementada para asegurar la política FIFO. Las nuevas solicitudes se encolan al final y se atienden desde el frente, garantizando que el ticket con más tiempo de espera sea el siguiente en procesarse.
 •	Lista de Notas (ListaNotas): Se utiliza una Lista Enlazada Simple dentro de cada Ticket para almacenar observaciones. Las nuevas notas se insertan eficientemente al inicio de la lista, permitiendo un registro rápido de la actividad reciente.
 
 # Catálogo de Estados 
-
 Cada solicitud (Ticket) transiciona a través de distintos estados que reflejan su posición actual en el ciclo de atención:
 •	EN_COLA: Estado predeterminado al crear el ticket. El caso espera a ser tomado por un operador.
 •	EN_ATENCION: El ticket ha sido extraído de la cola y está siendo gestionado activamente. Se permite la modificación de notas.
 •	COMPLETADOEl servicio ha concluido, y el ticket pasa a un historial inmutable.
-
-Manejo de errores 
-
+## Manejo de errores 
 Tenemos las Validaciones rigurosas para asegurar la integridad de los datos y la lógica operativa.
 •	Si la ColaTickets está vacía al intentar atenderSiguiente(), el sistema informa que "no hay tickets pendientes".
 •	Validación Se asegura que el nombre del estudiante sea válido (no vacío y con longitud mínima) antes de crear un ticket. De igual forma, las opciones de menú y el texto de las notas deben ser válidos.
