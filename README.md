@@ -62,9 +62,13 @@ Opción 2: Salir: Finaliza el programa.
 8. Deshacer (Undo): Revierte la última acción registrada en la pila undo. Si revierte una adición, la nota se elimina; si revierte una eliminación, la nota se restaura. La acción se mueve a la pila redo.
 9. Rehacer (Redo)Restaura la última acción revertida que se encuentre en la pila redo. La acción se mueve de vuelta a la pila undo.
 10. Finalizar AtenciónCierra el ciclo de atención: el estado del ticket pasa a COMPLETADO y el ticketActual se libera (null), devolviendo el control al Menú Principal.
+# Evidencias 
 
 
-       <img width="682" height="158" alt="image" src="https://github.com/user-attachments/assets/23cd4448-ac1f-44f3-9e1e-b7acca0ed897" />
+
+
+
+  <img width="682" height="158" alt="image" src="https://github.com/user-attachments/assets/23cd4448-ac1f-44f3-9e1e-b7acca0ed897" />
 
 
  ## Equipo de desarrollo:
