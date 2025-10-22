@@ -12,7 +12,7 @@ La gestión del historial se apoya en dos estructuras de datos de tipo Pila (Pil
 •	Pila de Deshacer (undo): Almacena las Acciones ejecutadas. Cuando se llama a deshacer (), la última acción se revierte y se mueve a la pila redo.
 •	Pila de Rehacer (redo): Contiene las acciones que han sido deshechas y están listas para ser restauradas. Si se realiza una nueva acción, esta pila se vacía para mantener la coherencia del historial.
 
-Estructuras de Datos
+## Estructuras de Datos
 
 El diseño del sistema prioriza el rendimiento y el flujo de trabajo lógico mediante el uso estratégico de estructuras de datos enlazadas:
 •	Cola de Tickets (ColaTickets): Implementada para asegurar la política FIFO. Las nuevas solicitudes se encolan al final y se atienden desde el frente, garantizando que el ticket con más tiempo de espera sea el siguiente en procesarse.
