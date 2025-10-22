@@ -67,9 +67,9 @@ Opción 2: Salir: Finaliza el programa.
        <img width="682" height="158" alt="image" src="https://github.com/user-attachments/assets/23cd4448-ac1f-44f3-9e1e-b7acca0ed897" />
 
 
- Equipo de desarrollo:
+ ## Equipo de desarrollo:
  - Soledad Buri
- - Victor
+ - Victor Fernando Roa
  - Ana Panamito
  - Martina Maldonado 
     
