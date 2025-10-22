@@ -55,8 +55,11 @@ Se imponen validaciones mínimas a las entradas de texto:
 1.	Al ejecutar el programa, se le solicitará al usuario la cantidad de tickets a ingresar.
 2.	Una vez que se a puesto cuantos tickets desea crear, se pide el Nombre del Estudiante, aplicando una validación para asegurar que el nombre sea válido.
 3.	Menú Principal: Tras la creación, el menú principal ofrece:
-Opción 1: Atender Siguiente Ticket: Extrae el caso más antiguo (FIFO) de la cola y lo toma para gestión.
-Opción 2: Salir: Finaliza el programa.
+   
+- Opción 1: Atender Siguiente Ticket: Extrae el caso más antiguo (FIFO) de la cola y lo toma para gestión.
+
+- Opción 2: Salir: Finaliza el programa.
+
 4.	Al seleccionar "Atender siguiente ticket", el sistema extrae el caso (desencolar), lo asigna a la variable ticketActual, cambia su estado a EN_ATENCION y presenta el submenú de gestión:
 5. Agregar Nota: Solicita un texto (ej: "es bonita" en la imagen) y lo añade a la ListaNotas del ticket. Esta acción se registra en la pila undo y limpia la pila redo.
 6. Eliminar Nota: Requiere el texto exacto de la nota a borrar. Si se elimina con éxito, se registra en undo y limpia redo. Si la nota no existe, el sistema alerta "no se encontro la nota".
