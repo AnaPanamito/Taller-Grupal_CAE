@@ -22,9 +22,13 @@ El diseño del sistema prioriza el rendimiento y el flujo de trabajo lógico med
 
 # Catálogo de Estados 
 Cada solicitud (Ticket) transiciona a través de distintos estados que reflejan su posición actual en el ciclo de atención:
+
 •	EN_COLA: Estado predeterminado al crear el ticket. El caso espera a ser tomado por un operador.
+
 •	EN_ATENCION: El ticket ha sido extraído de la cola y está siendo gestionado activamente. Se permite la modificación de notas.
+
 •	COMPLETADOEl servicio ha concluido, y el ticket pasa a un historial inmutable.
+
 ## Manejo de errores 
 Tenemos las Validaciones rigurosas para asegurar la integridad de los datos y la lógica operativa.
 
