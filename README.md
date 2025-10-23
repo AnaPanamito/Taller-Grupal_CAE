@@ -45,11 +45,12 @@ El sistema está diseñado para mantener su estabilidad y coherencia, gestionand
 -	 El sistema está diseñado para manejar un único caso en el estado EN_ATENCION (ticketActual). El flujo de trabajo queda bloqueado en el menuTicket() de ese caso específico hasta que el operador selecciona la opción de "finalizar atencion" (que cambia el estado ha COMPLETADO y limpia ticketActual) antes de poder regresar al menú principal y tomar un nuevo caso.
 -	Deshacer (Undo): Antes de intentar revertir una acción, el método deshacer() verifica si la pila de acciones realizadas (undo) se encuentra vacía. Si no hay acciones que revertir, el sistema lo indica con el mensaje "no hay acciones para deshacer".
 -	Rehacer (Redo): La función rehacer() comprueba el estado de la pila redo. Si no contiene acciones previamente deshechas, se impide la operación y se muestra el mensaje "no hay acciones para rehacer".
-- Cada vez que se realiza una nueva acción válida (como agregarNota o eliminarNota), la pila redo se vacía (redo = new PilaAcciones();). Esto asegura que no se puedan rehacer acciones antiguas que ya no son consistentes con el nuevo estado del ticket
-- El componente Historial gestiona los tickets finalizados. Al intentar consultar el historial (verHistorial), si la lista interna de tickets completados está vacía, el sistema informa "(no hay tickets en el historial)".
+- Cada vez que se realiza una nueva acción válida (como agregarNota o eliminarNota), la pila redo se vacía (redo = new PilaAcciones();). Esto asegura que no se puedan rehacer acciones antiguas que ya no son consistentes con el nuevo estado del ticket.
 Se imponen validaciones mínimas a las entradas de texto:
 -	Nombre de Estudiante: El nombre debe ser válido y contener al menos dos caracteres (esNombreValido) antes de que el ticket sea creado.  El texto de la nota no puede ser nulo o vacío (esNotaValida).
 -	Selección de Menú Inválida: El menuTicket() exige que la opción seleccionada sea un número entero, utilizando los métodos esNumeroEntero y esOpcionValida. Cualquier entrada que no cumpla con estos criterios es rechazada.
+- El componente Historial gestiona los tickets finalizados. Al intentar consultar el historial (verHistorial), si la lista interna de tickets completados está vacía, el sistema informa "(no hay tickets en el historial)".
+
   
 # Guía de ejecución 
 
