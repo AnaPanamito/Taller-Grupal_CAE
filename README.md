@@ -99,7 +99,6 @@ Se imponen validaciones mínimas a las entradas de texto:
 11. Finalizar: AtenciónCierra el ciclo de atención: el estado del ticket pasa a COMPLETADO y el ticketActual se libera (null), devolviendo inmediatamente al control Menú Principal.
 
 
-# Evidencias 
 
 
 
